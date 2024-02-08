@@ -1,0 +1,5 @@
+# ignore generated folders
+__pycache__
+rsconnect-python
+pdf
+files

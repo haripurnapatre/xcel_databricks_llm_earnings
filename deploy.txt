@@ -1,0 +1,27 @@
+# add server
+rsconnect add -n connect -s https://ptlcap98.corp.xcelenergy.net:3939 -k <token>
+
+# to deploy from workbench without git backend
+rsconnect deploy streamlit \
+    -s https://ptlcap98.corp.xcelenergy.net:3939 \
+    --entrypoint app.py \
+    --app-id 6058ecd2-a9e7-461c-85da-564c93f28312 \
+	.
+
+#    --new \
+#    --title ir_llm \
+
+
+# write manifest for git backed deployments
+# https://docs.posit.co/connect/user/git-backed/
+rsconnect write-manifest streamlit \
+-g --overwrite --entrypoint app.py \
+-x data \
+-x .devcontainer \
+-x notebooks \
+-x env \
+-x imgs \
+-x scripts \
+-x sql \
+-x venv \
+.

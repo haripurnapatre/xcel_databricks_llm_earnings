@@ -1,0 +1,15 @@
+databricks==0.2
+databricks-cli==0.18.0
+databricks-sdk==0.17.0
+transformers==4.37.2
+google-cloud-aiplatform==1.39.0
+langchain==0.0.350
+langchain-community==0.0.2
+langchain-core==0.1.0
+plotly==5.18.0
+PyMuPDF==1.23.16
+requests==2.31.0
+st-annotated-text==4.0.1
+streamlit==1.27.0
+streamlit-chat==0.1.1
+streamlit-extras==0.3.6

@@ -1,0 +1,15 @@
+# Databricks config
+databricks_config:
+  databricks_host: "dbc-beada314-1494.cloud.databricks.com"
+  databricks_token: "dapib69a1922f0205a56da185a83260523ed"
+  databricks_clusterId: "0824-205632-tf9vr0lh"
+  password: "password"
+
+# Databricks Path
+pull_report:
+# Databricks Path where Earning call transcripts are saved
+  dbfs_pdfs_dir: "dbfs:/FileStore/investor_relations/q4_transcripts/"
+# Databricks Path where llm generated reports are saved
+  reports_dir: "dbfs:/FileStore/q4_2_res/"
+
+
