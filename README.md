@@ -125,15 +125,15 @@ The Dashboard consists of 5 sections :
 
   ![CNFG_COMMIT](/imgs/git_config.PNG)
 
-5. Pip Install requirements.txt (pip install -r requirements.txt)
+4. Pip Install requirements.txt (pip install -r requirements.txt)
 
-6. Run report_gen_job.py (python report_gen_job.py)
+5. Run report_gen_job.py (python report_gen_job.py)
 
    Check Job Run on UI and wait for Status : Succeeded
 
    ![JOB_RUN](/imgs/job_run.PNG)
 
-7. Run app.py using streamlit to load frontend (streamlit run app.py).
+6. Run app.py using streamlit to load frontend (streamlit run app.py).
 
    ![UI](/imgs/UI.PNG)
 
