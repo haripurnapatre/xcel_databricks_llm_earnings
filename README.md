@@ -117,23 +117,19 @@ The Dashboard consists of 5 sections :
 ## Installation
 1. Clone repo. (git clone https://gitlab.com/xcel-master/data_science/llm_earnings_call.git)
 
-2. Set variables in config.yml.
+2. Set variables in config.yml and commit the changes to git.
 
    ![CNFG_SETUP](/imgs/config_2.PNG)
 
-3. Commit Updated config.yml to git.
+3. Pip Install requirements.txt (pip install -r requirements.txt)
 
-  ![CNFG_COMMIT](/imgs/git_config.PNG)
-
-4. Pip Install requirements.txt (pip install -r requirements.txt)
-
-5. Run report_gen_job.py (python report_gen_job.py)
+4. Run report_gen_job.py (python report_gen_job.py)
 
    Check Job Run on UI and wait for Status : Succeeded
 
    ![JOB_RUN](/imgs/job_run.PNG)
 
-6. Run app.py using streamlit to load frontend (streamlit run app.py).
+5. Run app.py using streamlit to load frontend (streamlit run app.py).
 
    ![UI](/imgs/UI.PNG)
 
