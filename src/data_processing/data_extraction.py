@@ -540,7 +540,11 @@ def extract_company_names(pdf_files: List[str], path: str) -> List[str]:
         
         # Find the start and end indices of the company name within the file path
         start = string.find(path[(path[:path.rfind('/')].rfind('/'))+1:]) + len(path[(path[:path.rfind('/')].rfind('/'))+1:])
-        end = string.find('_Earnings_Call_')
+
+        if string.find('_Earnings Call_') != -1:
+            end = string.find('_Earnings Call_')
+        else:
+            end = string.find('_Earnings_Call_')
         
         # Extract the company name using the start and end indices
         company_name = string[start:end]
