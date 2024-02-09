@@ -119,17 +119,21 @@ The Dashboard consists of 5 sections :
 
 2. Set variables in config.yml.
 
-   ![CNFG_SETUP](/imgs/file_update.PNG)
+   ![CNFG_SETUP](/imgs/config_2.PNG)
 
-3. Pip Install requirements.txt (pip install -r requirements.txt)
+3. Commit Updated config.yml to git.
 
-4. Run report_gen_job.py (python report_gen_job.py)
+  ![CNFG_COMMIT](/imgs/git_config.PNG)
+
+5. Pip Install requirements.txt (pip install -r requirements.txt)
+
+6. Run report_gen_job.py (python report_gen_job.py)
 
    Check Job Run on UI and wait for Status : Succeeded
 
    ![JOB_RUN](/imgs/job_run.PNG)
 
-5. Run app.py using streamlit to load frontend (streamlit run app.py).
+7. Run app.py using streamlit to load frontend (streamlit run app.py).
 
    ![UI](/imgs/UI.PNG)
 
