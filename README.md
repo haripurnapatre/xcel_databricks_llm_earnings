@@ -119,7 +119,7 @@ The Dashboard consists of 5 sections :
 
 2. Set variables in config.yml.
 
-   ![CNFG_SETUP](/imgs/config_1.PNG)
+   ![CNFG_SETUP](/imgs/file_update.PNG)
 
 3. Pip Install requirements.txt (pip install -r requirements.txt)
 
