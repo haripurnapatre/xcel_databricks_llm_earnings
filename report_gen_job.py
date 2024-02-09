@@ -44,8 +44,8 @@ job_payload = {
         }
     ],
     "git_source": {
-        "git_url": "https://gitlab.com/xcel-master/data_science/llm_earnings_call.git",
-        "git_provider": "gitLab",
+        "git_url": "https://github.com/haripurnapatre/xcel_databricks_llm_earnings.git",
+        "git_provider": "gitHub",
         "git_branch": "main"
     },
     "format": "MULTI_TASK"
