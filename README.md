@@ -23,19 +23,19 @@ The Dashboard consists of 5 sections :
 
 
 ## Visuals
-* Report Overview Section
+* Report Overview Section (**LLM GENERATED CONTEXT REFINEMENT**)
 
 ![Report Overview Section](./imgs/ir_report.PNG)
 
-* Chatbot
+* Chatbot (**RAG CHATBOT**)
 
-![Chatbot](./imgs/ir_chat.PNG)
+![Chatbot](./imgs/ir_chat.PNG) 
 
-* Question and Answer Section
+* Question and Answer Section (**LLM GENERATED TOPIC MODELING AND Q&A EXTRACTION**)
 
-![Question and Answer Section](/imgs/ir_qa.PNG)
+![Question and Answer Section](/imgs/ir_qa.PNG) 
 
-* Management Discussion Section
+* Management Discussion Section (**LLM GENERATED SENTIMENT ANALYSIS**)
 
 ![Management Discussion Section](./imgs/ir_md.PNG)
 
@@ -45,11 +45,13 @@ The Dashboard consists of 5 sections :
 
 ## Project Plan
 
-1. Report Overview 
+1. Report Overview (**LLM GENERATED CONTEXT REFINEMENT**)
 
   * Split PDF into chunks.
 
   * Create prompt to output report in a JSON format based on following categories : (Summary, Revenue growth drivers and challenges, Margin performance and expense management, Earnings quality and non-GAAP metrics, Capital allocation and cash flow, Guidance and forward-looking statements, Conclusion)
+
+  ![Prompt](/imgs/p_overview.PNG)
 
   ![Prompt_Response](/imgs/ir_1.PNG)
 
@@ -63,12 +65,12 @@ The Dashboard consists of 5 sections :
   
   * Save as csv.
 
-2. Chatbot
+2. Chatbot (**RAG CHATBOT**)
   * Format PDF to remove disclaimers.
   * Remove Q&A section due to information overlap.
   * Pass entire PDF as context leveraging mixtral's large token length.
 
-3. Question and Answer Section
+3. Question and Answer Section (**LLM GENERATED TOPIC MODELING AND Q&A EXTRACTION**)
 
   * Extract Question and Answer section from the PDF.
 
@@ -84,7 +86,7 @@ The Dashboard consists of 5 sections :
 
   ![QA_CSV](/imgs/ir_qa_3.PNG)
 
-4. Management Discussion Section
+4. Management Discussion Section (**LLM GENERATED SENTIMENT ANALYSIS**)
 
   * Extract Management Discussion section from PDF.  
 
@@ -113,11 +115,23 @@ The Dashboard consists of 5 sections :
  * Save as csv.
 
 ## Installation
-1. Clone repo.
+1. Clone repo. (git clone https://gitlab.com/xcel-master/data_science/llm_earnings_call.git)
+
 2. Set variables in config.yml.
+
+   ![CNFG_SETUP](/imgs/config_1.PNG)
+
 3. Pip Install requirements.txt (pip install -r requirements.txt)
-4. Run src/report_gen_job.py
-4. Run app.py to load frontend.
+
+4. Run report_gen_job.py (python report_gen_job.py)
+
+   Check Job Run on UI and wait for Status : Succeeded
+
+   ![JOB_RUN](/imgs/job_run.PNG)
+
+5. Run app.py using streamlit to load frontend (streamlit run app.py).
+
+   ![UI](/imgs/UI.PNG)
 
 
 ## Authors and acknowledgment
